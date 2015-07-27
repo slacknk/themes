@@ -1,0 +1,134 @@
+#ABUILD created by/создан: NK, nk-man at yandex.ru 
+#----------------------------- General vars --------------------------------------
+#------------------------- Основные переменные -----------------------------------
+pkgname=clearlooks062x-gtk-theme
+pkgver=1.5_`date "+%y%m%d"`
+pkgbuild=1
+arch=('noarch')
+
+shortdesc="Clearlooks-based theme"
+#-ruler---|--------------------------------------------------------------------------|
+longdesc=("Clearlooks062x theme, based off Clearlooks 0.6.2 (GTK 2.x Theme/Style) by Remenic < http://gnome-look.org/content/show.php/Clearlooks?content=19527 >. Dependence: gtk-engines. License: GPL."
+)
+
+if [ ! -d "${filedir}/other" ]; then
+ source=("http://gnome-look.org/CONTENT/content-files/140557-clearlooks062x_gtk2.tar.xz")
+elif [ -z "`echo ${pkgver} | grep '_'`" ]; then 
+ echo "${pkgname}: theme not found"
+ exit 1
+fi
+
+patch_opts=("")
+
+#----------------------------- AgiliaLinux vars --------------------------------------
+#--------------------- Специфичные для AgiliaLinux ------------------------------
+#short and long tags / длинный и короткий тег
+tags="themes x11-themes"
+
+#dependencies only needed to build package
+build_deps=""
+
+provides=""
+conflicts=""
+
+adddep="gtk-engines"
+removedep=""
+
+#for multi pkg abuild
+pkglist=
+
+#Set number of jobs while compliling, otherwise it'll be autodetected
+#numjobs=1
+
+#additional files should be copied into /usr/docs/${pkgname} dir from sources
+docs= #"${filedir}/*.png ${filedir}/Clearlooks062x-1.0_* ${filedir}/COPYING"
+gendeps_blacklist=
+
+#custom_opts: skip_validate skip_gendeps no_postperm no_strip
+custom_opts=""
+
+#----------------------------- Make PKG --------------------------------------
+#-------------------------- Сборка пакета ------------------------------------
+
+#ran before function build()
+#запускается перед сборкой
+before_build()
+{
+echo ""
+}
+
+build()
+{
+go_src_dir
+burn_patches
+}
+
+#ran after function build() 
+#после сборки
+after_build()
+{
+echo ""
+
+#-------------------------
+if [ -d "${filedir}/other" ]; then
+
+# theme
+mkdir -p ${pkgdir}/usr/share/themes/
+cp -rv ${filedir}/Clearlooks062x-${pkgver} ${pkgdir}/usr/share/themes/Clearlooks062x || exit 1
+#cp -rv ${filedir}/Clearlooks062x-gummy-${pkgver} ${pkgdir}/usr/share/themes/Clearlooks062x-gummy || exit 1
+#cp -rv ${filedir}/Clearlooks062x-gummy3-${pkgver} ${pkgdir}/usr/share/themes/Clearlooks062x-gummy3 || exit 1
+
+g_st(){
+	echo "GUMMY"
+
+install -Dm644 ${pkgdir}/usr/share/themes/Clearlooks062x/gtk-2.0/gtkrc \
+	${pkgdir}/usr/share/themes/Clearlooks062x-gummy/gtk-2.0/gtkrc || exit 1
+sed -i -e 's|#style = GUMMY|style = GUMMY|' \
+	-e 's|xthickness = 2|xthickness = 1|' \
+	-e 's|ythickness = 1|ythickness = 2|' \
+	${pkgdir}/usr/share/themes/Clearlooks062x-gummy/gtk-2.0/gtkrc || exit 1
+
+install -Dm644 ${pkgdir}/usr/share/themes/Clearlooks062x/gtk-2.0/gtkrc \
+	${pkgdir}/usr/share/themes/Clearlooks062x-gummy3/gtk-2.0/gtkrc || exit 1
+sed -i -e 's|#style = GUMMY|style = GUMMY|' \
+	-e 's|xthickness = 2|xthickness = 3|' \
+	-e 's|ythickness = 1|ythickness = 3|' \
+	${pkgdir}/usr/share/themes/Clearlooks062x-gummy3/gtk-2.0/gtkrc || exit 1
+}
+#g_st
+
+# doc_dir
+mkdir -p ${pkgdir}/usr/doc/${pkgname}-${pkgver}
+cp -v ${filedir}/other/*.png ${pkgdir}/usr/doc/${pkgname}-${pkgver} || exit 1
+cp -v ${filedir}/other/COPYING ${pkgdir}/usr/doc/${pkgname}-${pkgver} || exit 1
+
+#
+doc_old(){
+cp -r ${filedir}/Clearlooks062x-* ${pkgdir}/usr/doc/${pkgname}-${pkgver}
+rm -rfv ${pkgdir}/usr/doc/${pkgname}-${pkgver}/Clearlooks062x{,-gummy}-${pkgver}
+
+cd ${pkgdir}/usr/doc/${pkgname}-${pkgver}/
+tar Jcf ${pkgdir}/usr/doc/${pkgname}-${pkgver}/old.tar.xz \
+	--ignore-failed-read --owner=root --group=root --mode=644 \
+	Clearlooks062x-* || exit 1
+rm -rf ${pkgdir}/usr/doc/${pkgname}-${pkgver}/Clearlooks062x-1.0_*
+}
+#doc_old
+
+mv ${pkgdir}/usr/doc/${pkgname}-${pkgver} \
+	${pkgdir}/usr/doc/${pkgname}-${pkgver/_`date "+%y%m%d"`/} || exit 1
+
+#if [ -d ${pkgdir}/usr/share/pixmaps ]; then
+#	rm -rfv ${pkgdir}/usr/share/pixmaps || exit 1
+#fi
+
+#-------------------------
+else
+ mkdir -p ${pkgdir}/usr/share/themes/
+ cp -rv ${srcdir}/Clearlooks062x ${pkgdir}/usr/share/themes/ || exit 1
+ mkdir -p ${pkgdir}/usr/doc/${pkgname}-${pkgver}
+ cp -v ${srcdir}/COPYING ${pkgdir}/usr/doc/${pkgname}-${pkgver} || exit 1
+fi
+#-------------------------
+
+}
