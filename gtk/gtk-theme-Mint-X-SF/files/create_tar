@@ -1,0 +1,8 @@
+cd $HOME/.themes
+
+if [ ! -f `date +%y%m%d`.tar.xz ]; then
+ tar Jcfv `date +%y%m%d`.tar.xz \
+  Mint-X-16PF \
+  Mint-X-17QF \
+  Mint-X-17QF2-16PF3
+fi
