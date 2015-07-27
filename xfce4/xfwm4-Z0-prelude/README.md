@@ -1,7 +1,5 @@
 # ZO (zukitwo-old-style) prelude - xfwm4-theme
-![](https://raw.githubusercontent.com/slacknk/themes/master/xfce4/xfwm4-Z0-prelude/files/screen-20140531-170916.png)
-
-![](https://raw.githubusercontent.com/slacknk/themes/master/xfce4/xfwm4-Z0-prelude/files/screen-20140604-233836.png) ![](https://raw.githubusercontent.com/slacknk/themes/master/xfce4/xfwm4-Z0-prelude/files/screen-20140615-082049.png)
+![](https://raw.githubusercontent.com/slacknk/themes/master/xfce4/xfwm4-Z0-prelude/files/screen-20140615-082049.png)
 
 ## Description:
 This is a mix xfwm4-theme from different themes. Based on and some sources from this xfwm themes:
