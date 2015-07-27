@@ -9,7 +9,7 @@ This is a mix xfwm4-theme from different themes. Based on and some sources from 
 * [Zukitwo-old-style](http://kexolino.deviantart.com/art/Zukitwo-old-style-Xfwm-theme-383362350) by kexolino - license: CC-BY-NC
 * [prelude-dfr](http://xfce-look.org/content/show.php/prelude-dfr?content=148144) by defer - license: GPL
 
-thanks to authors this beautiful themes
+(thanks to authors this beautiful themes)
 
 ## License: 
 [Creative Commons by-nc](http://creativecommons.org/licenses/by-nc/3.0/)
