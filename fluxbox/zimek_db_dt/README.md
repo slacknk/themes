@@ -10,6 +10,6 @@
 
 ![](https://raw.githubusercontent.com/slacknk/themes/master/fluxbox/zimek_db_dt/files/screen-150506-232252.png)
 
-Thanks to author`s 10r for the orginal [theme](http://www.tenr.de/styles/allstyles.php)
+* Thanks to author`s 10r for the orginal [theme](http://www.tenr.de/styles/allstyles.php)
 
 ![](https://raw.githubusercontent.com/slacknk/themes/master/fluxbox/zimek_db_dt/files/preview.jpg)
