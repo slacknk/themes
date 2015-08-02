@@ -53,4 +53,4 @@ All themes install or copy in /usr/share/icons or ~/.icons
 
 ##### Links to repository with Slackbuilds and packages:
 - [SBo](http://slackbuilds.org/result/?search=faenza-icon-theme&sv=14.1)
-- [msb](http://slackware.org.uk/msb/14.1/1.10/x86/)
+- [MSB](http://slackware.org.uk/msb/14.1/1.10/x86/)
