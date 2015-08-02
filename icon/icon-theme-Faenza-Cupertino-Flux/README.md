@@ -38,12 +38,12 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 * MATE-Faenza 	- GPLv2
 * MATE 			- GNU LGPL v.3 or Creative Commons BY-SA 3.0 license
 
-### Slack-packages:
+##### Slack-packages:
 - faenza-icon-theme-1.3-noarch-1_SBo
 - kfaenza-icon-theme-0.8.9-noarch-1_SBo
 - mate-icon-theme-1.10.1-noarch-1_msb
 - mate-icon-theme-faenza-1.10.0-noarch-1_msb
 
-### Links to repository with Slackbuilds and packages:
-[SBo](http://slackbuilds.org/result/?search=faenza-icon-theme&sv=14.1)
-[msb](http://slackware.org.uk/msb/14.1/1.10/x86/)
+##### Links to repository with Slackbuilds and packages:
+- [SBo](http://slackbuilds.org/result/?search=faenza-icon-theme&sv=14.1)
+- [msb](http://slackware.org.uk/msb/14.1/1.10/x86/)
