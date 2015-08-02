@@ -8,10 +8,11 @@
 # 	mate-icon-theme-1.8.0-noarch-1_msb
 # 	mate-icon-theme-faenza-1.8.0-noarch-1_msb
 
+NAME="Faenza-Cupertino-Flux"
 DIR="$HOME/.icons"
-DIRP="$DIR/Faenza-Cupertino-Patch"
+DIRP="$DIR/$NAME"
 
-rm -rfv $DIRP
+[ -d $DIRP ] && rm -rfv $DIRP
 mkdir -p $DIRP
 
 
@@ -30,12 +31,12 @@ else
 fi
 
 sed \
- -e "s|Name=Faenza-Cupertino|Name=Faenza-Cupertino-Patch|" \
+ -e "s|Name=Faenza-Cupertino|Name=$NAME|" \
  -e "s|Inherits=Faenza|Inherits=Faenza-Cupertino|" \
  -i $DIRP/index.theme
 
 echo ""
-cat $DIRP/index.theme | grep Faenza-Cupertino-Patch || exit 1
+cat $DIRP/index.theme | grep $NAME || exit 1
 echo ""
 
 #lndir /usr/share/icons/Faenza-Cupertino $DIRP
@@ -241,14 +242,13 @@ i_x
 ###
 
 echo -e "\n______________________________________________________"
-echo -e "Done, Enjoy new icon-theme: \e[1mFaenza-Cupertino-Patch\e[0m \n\n\n"
+echo -e "Done, Enjoy new icon-theme: \e[1m$NAME\e[0m \n\n\n"
 
 
 ### ______________________________________________________
 ###
 
-
-DIRD=${DIRP/-Patch/-Patch-Dark/}
+DIRD="$DIR/${NAME}-Dark"
 [ -d $DIRD ] && rm -rf $DIRD
 #cp -a 	$DIR/Faenza-Cupertino 				$DIRD
 #cp -a 	$DIR/Faenza-Cupertino-Patch/* 		$DIRD
@@ -257,18 +257,18 @@ DIRD=${DIRP/-Patch/-Patch-Dark/}
 mkdir $DIRD
 cd $DIRD
 lndir ../Faenza-Cupertino 		./
-lndir ../Faenza-Cupertino-Patch ./
+lndir ../$NAME ./
 rm -v ./index.theme
 cat ../Faenza-Cupertino/index.theme > ./index.theme
 
 sed \
- -e "s|Name=Faenza-Cupertino|Name=Faenza-Cupertino-Patch-Dark|" \
+ -e "s|Name=Faenza-Cupertino|Name=$NAME-Dark|" \
  -e "s|Inherits=Faenza|Inherits=Faenza-Dark|" \
  -i $DIRD/index.theme
 
 
 echo -e "\n______________________________________________________"
-echo -e "Done, Enjoy new icon-theme: \e[1mFaenza-Cupertino-Dark\e[0m "
+echo -e "Done, Enjoy new icon-theme: \e[1m$NAME-Dark\e[0m "
 
 
 
