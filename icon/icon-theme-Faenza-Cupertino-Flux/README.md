@@ -3,7 +3,7 @@
 * Faenza-Cupertino-Flux-Dark (Dark-version for black tray)
 
 ## Description: 
-Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons for different modifications: just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza.
+Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons. For different modifications: just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza.
 
 ![](https://raw.githubusercontent.com/slacknk/themes/master/icon/icon-theme-Faenza-Cupertino-Flux/files/150727.png)
 
