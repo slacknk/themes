@@ -16,7 +16,7 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 > 2. [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008)
 > 3. And final this theme: Faenza-Cupertino-Flux
 
-All themes install in ~/.icons or /usr/share/icons
+All themes install or copy in /usr/share/icons or ~/.icons
 
 ## Changelog:
  
