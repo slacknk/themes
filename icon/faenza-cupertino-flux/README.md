@@ -50,9 +50,6 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 
 ## Install:
 All themes install in ~/.icons or /usr/share/icons
-
-1. Install Faenza icon-theme
-
-2. Faenza-Cupertino
-
-3. And final this theme: Faenza-Cupertino-Flux
+> 1. Install Faenza icon-theme
+> 2. Faenza-Cupertino
+> 3. And final this theme: Faenza-Cupertino-Flux
