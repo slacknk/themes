@@ -7,11 +7,11 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 
 ![](https://raw.githubusercontent.com/slacknk/themes/master/icon/icon-theme-Faenza-Cupertino-Patch/files/150727.png)
 
-### Requires/Inherits: [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008)
+##### Requires/Inherits: [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008)
 
-### License: [GPL](http://www.gnu.org/licenses/gpl.html)
+#### License: [GPL](http://www.gnu.org/licenses/gpl.html)
 
-### Used, Icons copy from this themes: 
+## Used, Icons copy from this themes: 
 * KFaenza 		- GPL
 * Faenza(-Dark) - GPLv3
 * MATE-Faenza 	- GPLv2
