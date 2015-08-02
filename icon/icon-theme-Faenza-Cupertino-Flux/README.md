@@ -5,7 +5,7 @@
 ## Description: 
 Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons for different modifications just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza.
 
-![](https://raw.githubusercontent.com/slacknk/themes/master/icon/icon-theme-Faenza-Cupertino-Patch/files/150727.png)
+![](https://raw.githubusercontent.com/slacknk/themes/master/icon/icon-theme-Faenza-Cupertino-Flux/files/150727.png)
 
 ##### Requires/Inherits: [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008)
 
@@ -18,7 +18,7 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 * MATE 			- GNU LGPL v.3 or Creative Commons BY-SA 3.0 license
 
 ## Changelog:
-
+ 
     Add:
     [+] engrampa 						(icon "file-roller" from "Faenza")
     [+] screengrab 						(gnome-screenshot - Faenza)
@@ -28,11 +28,11 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
     [+] application-x-fictionbook+xml 	(accessories-dictionary - KFaenza)
     [+] text-x-patch 					(text-x-patch - mate)
     [+] application-x-perl 				(application-x-perl - mate)
-
+ 
     Modified:
     [*] transmission-tray-icon 			(transmission - matefaenza)
     [*] mozilla-firefox 				(firefox-original - Faenza)
-
+ 
     Fixes:
     [*] winecfg 						(wine -Faenza)
     [*] gdmsetup 						(gdm-setup -Faenza)
