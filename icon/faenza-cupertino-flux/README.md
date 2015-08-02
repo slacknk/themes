@@ -12,9 +12,9 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 ##### License: [GPL](http://www.gnu.org/licenses/gpl.html)
 
 ## Install:
-> 1. Install [Faenza](http://gnome-look.org/content/show.php?content=128143) icon-theme
-> 2. [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008)
-> 3. And final this theme: Faenza-Cupertino-Flux
+> 1. Install icon-theme [Faenza](http://gnome-look.org/content/show.php?content=128143);
+> 2. [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008);
+> 3. And final this theme: Faenza-Cupertino-Flux.
 
 All themes install or copy in /usr/share/icons or ~/.icons
 
