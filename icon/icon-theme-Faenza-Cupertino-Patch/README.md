@@ -12,8 +12,8 @@ Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?co
 ##### License: [GPL](http://www.gnu.org/licenses/gpl.html)
 
 ## Used, Icons copy from this themes: 
-* KFaenza 		- GPL
 * Faenza(-Dark) - GPLv3
+* KFaenza 		- GPL
 * MATE-Faenza 	- GPLv2
 * MATE 			- GNU LGPL v.3 or Creative Commons BY-SA 3.0 license
 
