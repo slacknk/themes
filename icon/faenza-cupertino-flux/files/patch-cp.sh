@@ -136,7 +136,7 @@ d1="apps"
 d2="${d1}"
 i1="firefox-original"
 i2="mozilla-firefox"
-i_faenza
+#i_faenza
 
 # applications-education for xdg-menu-gen
 K="Faenza"
