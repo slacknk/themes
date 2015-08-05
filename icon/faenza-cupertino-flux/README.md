@@ -34,8 +34,8 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [*] transmission-tray-icon 			(transmission - matefaenza)
  
     Fixes:
-    [*] winecfg 						(wine -Faenza)
-    [*] gdmsetup 						(gdm-setup -Faenza)
+    [*] winecfg 						(wine - Faenza)
+    [*] gdmsetup 						(gdm-setup - Faenza)
     [*] start-here 						(start-here-mate - matefaenza
 
 ## Used, Icons copy from this themes: 
