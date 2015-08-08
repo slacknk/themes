@@ -36,7 +36,7 @@ All themes install or copy in /usr/share/icons or ~/.icons
     Fixes:
     [*] winecfg 						(wine - Faenza)
     [*] gdmsetup 						(gdm-setup - Faenza)
-    [*] start-here 						(start-here-mate - matefaenza
+    [*] start-here 						(start-here-mate - matefaenza)
 
 ## Used, Icons copy from this themes: 
 * Faenza(-Dark) - GPLv3
