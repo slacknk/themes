@@ -35,10 +35,10 @@ All themes install or copy in /usr/share/icons or ~/.icons
    
     Modified:
     [*] geany 							(geany - Mint-X)
-    [+] gimp 							(gimp - Mint-X)
+    [*] gimp 							(gimp - Mint-X)
     [*] transmission-tray-icon 			(transmission - matefaenza)
-    [+] application-x-clementine 		(clementine2 - KFaenza)
-    [+] system-file-manager 			(wireshark - KFaenza)
+    [*] application-x-clementine 		(clementine2 - KFaenza)
+    [*] system-file-manager 			(wireshark - KFaenza)
  
     Fixes:
     [*] winecfg 						(wine - Faenza)
