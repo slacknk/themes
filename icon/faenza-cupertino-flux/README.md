@@ -56,6 +56,8 @@ All themes install or copy in /usr/share/icons or ~/.icons
 * Packages: http://packages.linuxmint.com/pool/main/m/mint-x-icons/
 * Sources: 	https://github.com/linuxmint/mint-x-icons
 
+***
+
 #### If your used slackware, slack-packages:
 - faenza-icon-theme-1.3-noarch-1_SBo
 - kfaenza-icon-theme-0.8.9-noarch-1_SBo
