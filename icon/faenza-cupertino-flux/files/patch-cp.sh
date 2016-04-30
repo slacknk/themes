@@ -7,12 +7,26 @@
 # 	kfaenza-icon-theme-0.8.9-noarch-1_SBo
 # 	mate-icon-theme-1.8.0-noarch-1_msb
 # 	mate-icon-theme-faenza-1.8.0-noarch-1_msb
+#	mint-x-icons-1.3.4_git20160422-noarch-3nk
 
 NAME="Faenza-Cupertino-Flux"
 DIR="$HOME/.icons"
 DIRP="$DIR/$NAME"
 
+set -e
+
+
+
+#[ -d $DIRP ] && tar Jfcv $DIR/${NAME}_`date "+%Y%m%d-%H%M%S"`.tar.xz ${DIRP}*
+
+cd $DIR
+ [ -d $DIRP ] && tar Jfcv ${NAME}_`date "+%Y%m%d-%H%M%S"`.tar.xz ${NAME}*
+cd -
+
 [ -d $DIRP ] && rm -rfv $DIRP
+
+
+
 mkdir -p $DIRP
 
 
@@ -59,7 +73,8 @@ K=""
 
 ### ______________________________________________________
 ###
-### [K]Faenza
+### [K]-[MATE]-Faenza
+### Mint-X
 ###
 
 i_faenza (){
@@ -88,7 +103,7 @@ if [ -f /usr/share/icons/${K}/${d1}/scalable/${i1}.svg ]; then
    $DIRP/${d2}/scalable/${i2}.svg || exit 1
 fi
 }
-
+### ______________________________________________________
 
 # engrampa
 K="Faenza"
@@ -155,6 +170,58 @@ i2="clipit-trayicon"
 #i_faenza
 
 
+# eom
+#K="matefaenza"
+#d1="places"
+#d2="apps"
+#i1="distributor-logo-mate"
+#i2="eom"
+K="matefaenza"
+d1="apps"
+d2="${d1}"
+i1="eom"
+i2="eom"
+i_faenza
+
+
+# geany for panel
+#K="matefaenza"
+ K=Mint-X
+d1="apps"
+d2="${d1}"
+i1="geany"
+i2="${i1}"
+i_faenza
+
+
+# qPDFv
+K=Mint-X
+d1="apps"
+d2="${d1}"
+i1="qpdfview"
+i2="${i1}"
+i_faenza
+
+
+# qb
+K=Mint-X
+d1="apps"
+d2="${d1}"
+i1="qbittorrent"
+i2="${i1}"
+i_faenza
+
+
+# gimp
+K=Mint-X
+d1="apps"
+d2="${d1}"
+i1="gimp"
+i2="${i1}"
+i_faenza
+
+
+
 ### ______________________________________________________
 
 # qt4config
@@ -165,6 +232,7 @@ i1="qtlogo"
 i2="qt-logo"
 i_faenza
 
+
 # FB2 / application/x-fictionbook+xml
 K="KFaenza"
 d1="apps"
@@ -172,6 +240,31 @@ d2="mimetypes"
 i1="accessories-dictionary"
 i2="application-x-fictionbook+xml"
 i_faenza
+
+
+# clementine
+K="KFaenza"
+d1="apps"
+d2="${d1}"
+i1="clementine2"
+i2="application-x-clementine"
+i_faenza
+
+#i1="clementine2"
+#i2="clementine"
+# i_faenza
+
+
+# dolphin from wireshark
+# Icon=system-file-manager
+K="KFaenza"
+d1="apps"
+d2="${d1}"
+i1="wireshark"
+i2="system-file-manager"
+i_faenza
+
+
 
 ### ______________________________________________________
 
@@ -186,9 +279,13 @@ i_faenza
 # start-mate-menu
 K="matefaenza"
 d1="places"
+d2="status"
 i1="start-here-mate"
 i2="start-here"
 i_faenza
+
+
+
 
 ### ______________________________________________________
 ###

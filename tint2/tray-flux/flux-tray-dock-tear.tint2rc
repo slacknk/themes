@@ -6,7 +6,7 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 60
+background_color = #080808 100
 border_color = #FFFFFF 100
 
 # ID 2
@@ -23,20 +23,20 @@ border_color = #FFFFFF 60
 
 # ID 4
 rounded = 0
-border_width = 0
-background_color = #131313 100
-border_color = #FFFFFF 100
+border_width = 1
+background_color = #202730 100
+border_color = #2B2B2B 100
 
 # Panel
 panel_monitor = 1
 panel_position = bottom right horizontal
-panel_size = 15% 20
+panel_size = 208 19
 panel_margin = 0 19
-panel_padding = 4 0 0
-panel_dock = 0
+panel_padding = 0 0 0
+panel_dock = 1
 wm_menu = 1
-panel_layer = bottom
-panel_background_id = 0
+panel_layer = top
+panel_background_id = 4
 
 # Panel Autohide
 autohide = 0
@@ -79,11 +79,11 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 0 0 0
+systray_padding = 0 -4 -1
 systray_sort = left2right
 systray_background_id = 0
-systray_icon_size = 0
-systray_icon_asb = 100 0 0
+systray_icon_size = 24
+systray_icon_asb = 70 0 0
 
 # Tooltips
 tooltip = 0

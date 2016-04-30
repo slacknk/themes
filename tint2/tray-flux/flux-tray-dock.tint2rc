@@ -79,11 +79,11 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 0 -4 -1
+systray_padding = 0 -3 0
 systray_sort = left2right
 systray_background_id = 0
-systray_icon_size = 24
-systray_icon_asb = 70 0 0
+systray_icon_size = 28
+systray_icon_asb = 100 0 0
 
 # Tooltips
 tooltip = 0

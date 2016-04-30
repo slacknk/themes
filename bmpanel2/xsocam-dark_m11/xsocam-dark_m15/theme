@@ -1,10 +1,10 @@
 theme
 	# name XSOcaM Dark
 	# author nsf <no.smile.face@gmail.com>
-	# modified by NK, 2010
+	# modified by NK, 2015
 
 	author NK
-	name XSOcaM Dark M10
+	name XSOcaM Dark M15
 	
 panel
 	position bottom
@@ -214,12 +214,12 @@ clock
 	#font Droid Sans bold 11.3
 	#font Droid Sans bold 11.4
 	#font Droid Sans bold 11.5
-	font Droid Sans bold 11.6
+	#font Droid Sans bold 11.6
 	#font Droid Sans bold 11.7
 	#font Droid Sans bold 11.8
 	#font Droid Sans bold 11.9
 	#font Droid Sans bold 12
-	#font Droid Sans bold 12.2
+	font Droid Sans bold 12.2
 	#font Droid Sans bold 12.4
 
 	#font Terminus bold 12

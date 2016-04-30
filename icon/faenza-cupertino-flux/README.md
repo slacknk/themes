@@ -3,7 +3,7 @@
 * Faenza-Cupertino-Flux-Dark (Dark-version for black tray)
 
 ### Description: 
-Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons. For different modifications, just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza.
+Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons. For different modifications, just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza, Mint-X.
 
 ![](https://raw.githubusercontent.com/slacknk/themes/master/icon/faenza-cupertino-flux/files/150806.png)
 
@@ -29,9 +29,16 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [+] application-x-fictionbook+xml 	(accessories-dictionary - KFaenza)
     [+] text-x-patch 					(text-x-patch - mate)
     [+] application-x-perl 				(application-x-perl - mate)
- 
+    [+] eom 							(eom - matefaenza)
+    [+] qpdfview 						(qpdfview - Mint-X)
+    [+] qbittorrent 					(qbittorrent - Mint-X)
+   
     Modified:
+    [*] geany 							(geany - Mint-X)
+    [+] gimp 							(gimp - Mint-X)
     [*] transmission-tray-icon 			(transmission - matefaenza)
+    [+] application-x-clementine 		(clementine2 - KFaenza)
+    [+] system-file-manager 			(wireshark - KFaenza)
  
     Fixes:
     [*] winecfg 						(wine - Faenza)
@@ -43,6 +50,11 @@ All themes install or copy in /usr/share/icons or ~/.icons
 * KFaenza 		- GPL
 * MATE-Faenza 	- GPLv2
 * MATE 			- GNU LGPL v.3 or Creative Commons BY-SA 3.0 license
+* Mint-X 		- GPL-3+
+
+###  mint-x-icons
+* Packages: http://packages.linuxmint.com/pool/main/m/mint-x-icons/
+* Sources: 	https://github.com/linuxmint/mint-x-icons
 
 #### If your used slackware, slack-packages:
 - faenza-icon-theme-1.3-noarch-1_SBo
