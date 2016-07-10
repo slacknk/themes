@@ -22,6 +22,7 @@ All themes install or copy in /usr/share/icons or ~/.icons
  
     Add:
     [+] engrampa 						(icon "file-roller" from "Faenza")
+    [+] stock_folder-copy 				(folder-copy for Dark-version - Faenza-Darkest)
     [+] screengrab 						(gnome-screenshot - Faenza)
     [+] gxkb 							(preferences-desktop-keyboard-shortcuts - Faenza)
     [+] applications-education 			(applications-science - Faenza)
@@ -37,13 +38,15 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [*] geany 							(geany - Mint-X)
     [*] gimp 							(gimp - Mint-X)
     [*] transmission-tray-icon 			(transmission - matefaenza)
-    [*] application-x-clementine 		(clementine2 - KFaenza)
     [*] system-file-manager 			(wireshark - KFaenza)
- 
+    [*] application-x-clementine 		(clementine2 - KFaenza)
+    [*] clementine 						(clementine2 - KFaenza)
+    
     Fixes:
     [*] winecfg 						(wine - Faenza)
     [*] gdmsetup 						(gdm-setup - Faenza)
     [*] start-here 						(start-here-mate - matefaenza)
+    
 
 ## Used, Icons copy from this themes: 
 * Faenza(-Dark) - GPLv3
@@ -61,9 +64,21 @@ All themes install or copy in /usr/share/icons or ~/.icons
 #### If your used slackware, slack-packages:
 - faenza-icon-theme-1.3-noarch-1_SBo
 - kfaenza-icon-theme-0.8.9-noarch-1_SBo
-- mate-icon-theme-1.10.1-noarch-1_msb
-- mate-icon-theme-faenza-1.10.0-noarch-1_msb
+
+##### mate-icon-theme:
+###### 14.1_msb
+```
+mate-icon-theme-1.10.1-noarch-1_msb 
+mate-icon-theme-faenza-1.10.0-noarch-1_msb 
+```
+###### 14.2_msb
+```
+mate-icon-theme-1.14.0-noarch-1_msb
+mate-icon-theme-faenza-1.14.0-noarch-1_msb
+```
 
 ##### Links to repository with Slackbuilds and packages:
 - [SBo](http://slackbuilds.org/result/?search=faenza-icon-theme&sv=14.1)
-- [msb](http://slackware.org.uk/msb/14.1/1.10/x86/)
+- [msb-14.1](http://slackware.org.uk/msb/14.1/1.10/)
+- [msb-14.2](http://slackware.uk/msb/14.2/1.14/)
+

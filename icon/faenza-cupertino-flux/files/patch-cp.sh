@@ -170,6 +170,7 @@ i2="clipit-trayicon"
 #i_faenza
 
 
+
 # eom
 #K="matefaenza"
 #d1="places"
@@ -247,8 +248,13 @@ K="KFaenza"
 d1="apps"
 d2="${d1}"
 i1="clementine2"
+
 i2="application-x-clementine"
 i_faenza
+
+i2="clementine"
+i_faenza
+
 
 #i1="clementine2"
 #i2="clementine"
@@ -362,6 +368,25 @@ sed \
  -e "s|Name=Faenza-Cupertino|Name=$NAME-Dark|" \
  -e "s|Inherits=Faenza|Inherits=Faenza-Dark|" \
  -i $DIRD/index.theme
+
+
+DIRP=$DIRD
+
+
+# folder-copy
+K="Faenza-Darkest"
+d1="actions"
+d2="${d1}"
+
+i1="folder-copy"
+i2="${i1}"
+i_faenza
+
+i1="stock_folder-copy"
+i2="${i1}"
+i_faenza
+
+
 
 
 echo -e "\n______________________________________________________"
