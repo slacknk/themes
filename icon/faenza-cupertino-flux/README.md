@@ -64,14 +64,13 @@ All themes install or copy in /usr/share/icons or ~/.icons
 #### If your used slackware, slack-packages:
 - faenza-icon-theme-1.3-noarch-1_SBo
 - kfaenza-icon-theme-0.8.9-noarch-1_SBo
-
-##### mate-icon-theme:
-###### 14.1_msb
+- mate-icon-theme:
+###### msb-14.1:
 ```
 mate-icon-theme-1.10.1-noarch-1_msb 
 mate-icon-theme-faenza-1.10.0-noarch-1_msb 
 ```
-###### 14.2_msb
+###### msb-14.2:
 ```
 mate-icon-theme-1.14.0-noarch-1_msb
 mate-icon-theme-faenza-1.14.0-noarch-1_msb
