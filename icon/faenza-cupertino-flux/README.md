@@ -65,6 +65,7 @@ All themes install or copy in /usr/share/icons or ~/.icons
 - faenza-icon-theme-1.3-noarch-1_SBo
 - kfaenza-icon-theme-0.8.9-noarch-1_SBo
 - mate-icon-theme:
+
 ###### msb-14.1:
 ```
 mate-icon-theme-1.10.1-noarch-1_msb 
