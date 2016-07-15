@@ -139,6 +139,14 @@ i1="wine"
 i2="winecfg"
 i_faenza
 
+# trash
+K="Faience"
+d1="status"
+d2="${d1}"
+i1="user-trash-full"
+i2="user-trash-full"
+#i_faenza
+
 # gxkb > 0.7.5
 K="Faenza"
 d1="apps"
