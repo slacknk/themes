@@ -33,14 +33,22 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [+] eom 							(eom - matefaenza)
     [+] qpdfview 						(qpdfview - Mint-X)
     [+] qbittorrent 					(qbittorrent - Mint-X)
-   
+    [+] (i)phone 						(phone - Mint-X)
+    [+] qmmp 							(emblem-sound - Faenza)
+    [+] dragonplayer 					(video-x-generic - Faenza)
+    [*] Kget							(emblem-downloads - Faenza)
+    
     Modified:
     [*] geany 							(geany - Mint-X)
     [*] gimp 							(gimp - Mint-X)
     [*] transmission-tray-icon 			(transmission - matefaenza)
     [*] system-file-manager 			(wireshark - KFaenza)
-    [*] application-x-clementine 		(clementine2 - KFaenza)
-    [*] clementine 						(clementine2 - KFaenza)
+    [*] application-x-clementine(-1.2) 	(clementine2 - KFaenza)
+    [*] clementine(-1.3) 				(clementine2 - KFaenza)
+    [*] Kopete 							(kopete - KFaenza)
+    [*] Ktorrent 						(applications-internet - Faenza)
+    [*] KPlayer							(applications-multimedia - Faenza)
+    [*] MPlayer							(totem - Faenza)
     
     Fixes:
     [*] winecfg 						(wine - Faenza)
@@ -78,7 +86,7 @@ mate-icon-theme-faenza-1.14.0-noarch-1_msb
 ```
 
 ##### Links to repository with Slackbuilds and packages:
-- [SBo](http://slackbuilds.org/result/?search=faenza-icon-theme&sv=14.1)
+- [SBo](https://slackbuilds.org/result/?search=faenza-icon-theme&sv=)
 - [msb-14.1](http://slackware.org.uk/msb/14.1/1.10/)
 - [msb-14.2](http://slackware.uk/msb/14.2/1.14/)
 

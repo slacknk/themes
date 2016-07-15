@@ -3,8 +3,11 @@ Some Fixes for Mint-X-gtk2-theme (by me). This is themes based on Mint-X from Li
 Included gtk3 w/o diff. Only edited gtk2-theme.
 
 Based on:
-- mint-themes_1.2.8_all
-- mint-themes-gtk3_3.8-9_all
+- mint-themes_1.2.8
+- mint-themes_1.3.5
+- mint-themes-gtk3_3.8-9
+- mint-themes-gtk3_3.10-5
+- mint-themes-gtk3_3.18+7
 
 Sources, original gtk-theme(s):
 2 -> http://packages.linuxmint.com/pool/main/m/mint-themes/
@@ -12,15 +15,6 @@ Sources, original gtk-theme(s):
 
 
 Changelog:
-
-17 -> 17QF
-[*] bar-player
-[*] XFCE panel - Start/Up\Down - Size-button-xfce4panel
-[*] Gtk-Tabs
-[*] Bottom-File-buttons
-[*] Scroll
-[*] Thunar - Bookmarks|FM
-[*] window-dragging
 
 16 -> 16PF
 [*] Gtk-Tabs
@@ -31,7 +25,17 @@ Changelog:
 [*] XFCE panel - Panel buttons - Color
 [*] Bar-player - Qt4 / GTK+ (example Clementine: Analise/Vol/PBar)
 
-17QF2-16PF3
-[+] Add sh-script for mix-idea-theme: Mint-X-17QF2-16PF3.
-This theme using for gtk2 - 17QF and gtk3 - 16 , if you gtk3 is not how ubuntu
+17 -> 17QF
+[*] bar-player
+[*] XFCE panel - Start/Up\Down - Size-button-xfce4panel
+[*] Gtk-Tabs
+[*] Bottom-File-buttons
+[*] Scroll
+[*] Thunar - Bookmarks|FM
+[*] window-dragging
 
+17QF2-16GTK3
+[+] This theme using for gtk2 - 17QF and gtk3 from linuxmint-16 , if you gtk3 is not how ubuntu
+
+17QF2-18GTK3
+[+] gtk3 from linuxmint-18 and gtk2 - 17QF

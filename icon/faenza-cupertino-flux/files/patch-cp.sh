@@ -85,17 +85,27 @@ find /usr/share/icons/${K}/ -name ${i1}.png \
 | sed -e "s|/||" \
 `"
 if [ -z "$S" ]; then
- echo -e "\n$i1 - not found\n"
- exit 1
+ echo -e "\n${i1}.png - not found"
+ S="`find /usr/share/icons/${K}/ -name ${i1}.svg \
+ | sed -e "s|/usr/share/icons/${K}/${d1}/||" \
+ | cut --complement -b '4-' \
+ | sed -e "s|/||"`"
+ [ -z "$S" ] && echo -e "${i1}.svg - not found\n" && exit 1 || echo -e "${i1}.svg - Yes\n"
 else
  echo -e "\n$i1\n$S"
 fi
+
 for s in $S; do 
  [ ! -d "$DIRP/${d2}/$s" ] && mkdir -p $DIRP/${d2}/${s}
  cp -av \
   /usr/share/icons/${K}/${d1}/${s}/${i1}.png \
-   $DIRP/${d2}/${s}/${i2}.png || exit 1
+   $DIRP/${d2}/${s}/${i2}.png || \
+ cp -av \
+  /usr/share/icons/${K}/${d1}/${s}/${i1}.svg \
+   $DIRP/${d2}/${s}/${i2}.svg \
+ || exit 1
 done
+
 if [ -f /usr/share/icons/${K}/${d1}/scalable/${i1}.svg ]; then
  mkdir -p $DIRP/${d2}/scalable
  cp -av \
@@ -145,6 +155,14 @@ i1="gdm-setup"
 i2="gdmsetup"
 i_faenza
 
+# dragonplayer
+K="Faenza"
+d1="mimetypes"
+d2="apps"
+i1="video-x-generic"
+i2=dragonplayer
+i_faenza
+
 # ffox flux-panel-task
 K="Faenza"
 d1="apps"
@@ -153,12 +171,44 @@ i1="firefox-original"
 i2="mozilla-firefox"
 #i_faenza
 
+# MPlayer
+K="Faenza"
+d1="apps"
+d2="${d1}"
+i1="totem"
+i2="mplayer"
+i_faenza
+
+# applications-education for xdg-menu-gen
+K="Faenza"
+d1="categories"
+d2="apps"
+i1="applications-multimedia"
+i2="kplayer"
+i_faenza
+
 # applications-education for xdg-menu-gen
 K="Faenza"
 d1="categories"
 d2="${d1}"
 i1="applications-science"
 i2="applications-education"
+i_faenza
+
+# KTorrent
+K="Faenza"
+d1="categories"
+d2="apps"
+i1="applications-internet"
+i2="ktorrent"
+i_faenza
+
+# KGet
+K="Faenza"
+d1="emblems"
+d2="apps"
+i1="emblem-downloads"
+i2="kget"
 i_faenza
 
 # clipit
@@ -222,6 +272,51 @@ i2="${i1}"
 i_faenza
 
 
+# iPhone
+K=Mint-X
+d1="devices"
+d2="${d1}"
+i1="phone"
+i2="${i1}"
+i_faenza
+
+
+#  qmmp
+d2="apps"
+i2="qmmp"
+
+qmmp_minty (){
+ K=Mint-Y
+ d1="apps"
+ i1="lxmusic"
+#i1="mpd"
+ i_faenza
+}
+
+qmmp_faenza (){
+ K="Faenza"
+ 
+ #d1="mimetypes"
+ #i1="audio-x-generic"
+ 
+ #d1=devices
+ #i1=multimedia-player-ipod-blue #grey
+ 
+ #d1=apps
+ #i1=preferences-desktop-sound
+ 
+ d1="emblems"
+ i1=emblem-sound
+ 
+ #d1=apps
+ #i1=minitunes
+ 
+ i_faenza
+}
+
+#qmmp_minty
+ qmmp_faenza
+
 
 ### ______________________________________________________
 
@@ -270,6 +365,14 @@ i1="wireshark"
 i2="system-file-manager"
 i_faenza
 
+
+# kopete
+K="KFaenza"
+d1="apps"
+d2="${d1}"
+i1="kopete"
+i2="${i1}"
+i_faenza
 
 
 ### ______________________________________________________
