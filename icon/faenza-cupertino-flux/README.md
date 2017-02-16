@@ -3,7 +3,7 @@
 * Faenza-Cupertino-Flux-Dark (Dark-version for black tray)
 
 ### Description: 
-Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons. For different modifications, just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza, Mint-X.
+Icon Theme based on [Faenza-Cupertino](http://gnome-look.org/content/show.php?content=129008). Added newest, some fixes and modified different icons. At this artwork for different modifications, just, icons copy from this themes: Faenza(-Dark), KFaenza, MATE, MATE-Faenza, Mint-X.
 
 ![](https://raw.githubusercontent.com/slacknk/themes/master/icon/faenza-cupertino-flux/files/150806.png)
 ![](https://raw.githubusercontent.com/slacknk/themes/master/icon/faenza-cupertino-flux/files/160710.png)
@@ -31,30 +31,36 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [+] application-x-fictionbook+xml 	(accessories-dictionary - KFaenza)
     [+] text-x-patch 					(text-x-patch - mate)
     [+] application-x-perl 				(application-x-perl - mate)
-    [+] eom 							(eom - matefaenza)
     [+] qpdfview 						(qpdfview - Mint-X)
+    [+] djvu 							(x-office-document - mate)
     [+] qbittorrent 					(qbittorrent - Mint-X)
     [+] (i)phone 						(phone - Mint-X)
-    [+] qmmp 							(emblem-sound - Faenza)
-    [+] dragonplayer 					(video-x-generic - Faenza)
-    [*] Kget							(emblem-downloads - Faenza)
+    [+] qmmp 							(preferences-desktop-sound - Faenza)
+    [+] vacuum-im 						(gnome-subtitles - Faenza)
+    [+] dragonplayer 					(applications-multimedia - Faenza)
+    [+] juK 							(library-internet-radio - Faenza)
+    [+] partitionmanager 				(gparted - KFaenza)
+    [+] blueman-device 					(preferences-system-bluetooth - Faenza)
+    [+] mame 							(mame - KFaenza)
+    [+] openoffice4 					(OOo - Faenza)
     
     Modified:
+    [*] system-file-manager 			(wireshark - KFaenza)
     [*] geany 							(geany - Mint-X)
     [*] gimp 							(gimp - Mint-X)
-    [*] transmission-tray-icon 			(transmission - matefaenza)
-    [*] system-file-manager 			(wireshark - KFaenza)
     [*] application-x-clementine(-1.2) 	(clementine2 - KFaenza)
     [*] clementine(-1.3) 				(clementine2 - KFaenza)
     [*] Kopete 							(kopete - KFaenza)
     [*] Ktorrent 						(applications-internet - Faenza)
     [*] KPlayer							(applications-multimedia - Faenza)
     [*] MPlayer							(totem - Faenza)
+    [*] pavucontrol 	 				(rhythmbox -> multimedia-volume-control - Faenza)
     
     Fixes:
     [*] winecfg 						(wine - Faenza)
     [*] gdmsetup 						(gdm-setup - Faenza)
     [*] start-here 						(start-here-mate - matefaenza)
+    [+] QtProject-qtcreator 			(qtcreator - Faenza)
     
 
 ## Used, Icons copy from this themes: 

@@ -20,7 +20,8 @@ set -e
 #[ -d $DIRP ] && tar Jfcv $DIR/${NAME}_`date "+%Y%m%d-%H%M%S"`.tar.xz ${DIRP}*
 
 cd $DIR
- [ -d $DIRP ] && tar Jfcv ${NAME}_`date "+%Y%m%d-%H%M%S"`.tar.xz ${NAME}*
+ #[ -d $DIRP ] && tar Jfcv ${NAME}_`date "+%Y%m%d-%H%M%S"`.tar.xz ${NAME}*
+  [ -d $DIRP ] && tar Jfcv `date "+%y%m%d"`.tar.xz ${NAME}*
 cd -
 
 [ -d $DIRP ] && rm -rfv $DIRP
@@ -115,6 +116,24 @@ fi
 }
 ### ______________________________________________________
 
+# OOo
+K="Faenza"
+d1="apps"
+d2="${d1}"
+for ooo in base calc draw impress math writer ; do
+ i1="ooo-${ooo}"
+ i2="openoffice4-${ooo}"
+ i_faenza
+done
+
+# blueman-device
+K="Faenza"
+d1="apps"
+d2="${d1}"
+i1="preferences-system-bluetooth"
+i2="blueman-device"
+i_faenza
+
 # engrampa
 K="Faenza"
 d1="apps"
@@ -163,14 +182,6 @@ i1="gdm-setup"
 i2="gdmsetup"
 i_faenza
 
-# dragonplayer
-K="Faenza"
-d1="mimetypes"
-d2="apps"
-i1="video-x-generic"
-i2=dragonplayer
-i_faenza
-
 # ffox flux-panel-task
 K="Faenza"
 d1="apps"
@@ -187,13 +198,37 @@ i1="totem"
 i2="mplayer"
 i_faenza
 
-# applications-education for xdg-menu-gen
+# kplayer
 K="Faenza"
 d1="categories"
 d2="apps"
 i1="applications-multimedia"
 i2="kplayer"
 i_faenza
+
+# juk
+K="Faenza"
+d1="apps"
+d2="apps"
+i1="library-internet-radio"
+i2="juk"
+i_faenza
+
+
+
+# dragonplayer
+K="Faenza"
+d2="apps"
+i2=dragonplayer
+
+#d1="mimetypes"
+#i1="video-x-generic"
+
+d1="categories"
+i1="applications-multimedia"
+
+i_faenza
+
 
 # applications-education for xdg-menu-gen
 K="Faenza"
@@ -211,13 +246,16 @@ i1="applications-internet"
 i2="ktorrent"
 i_faenza
 
+
+#[+] Kget							(emblem-downloads - Faenza)
 # KGet
 K="Faenza"
 d1="emblems"
 d2="apps"
 i1="emblem-downloads"
 i2="kget"
-i_faenza
+#i_faenza
+
 
 # clipit
 K="Faenza-Dark"
@@ -228,19 +266,19 @@ i2="clipit-trayicon"
 #i_faenza
 
 
-
+#[+] eom 							(eom - matefaenza)
 # eom
-#K="matefaenza"
-#d1="places"
-#d2="apps"
-#i1="distributor-logo-mate"
-#i2="eom"
 K="matefaenza"
-d1="apps"
-d2="${d1}"
-i1="eom"
 i2="eom"
-i_faenza
+d2="apps"
+
+#d1="places"
+#i1="distributor-logo-mate"
+
+d1="apps"
+i1="eom"
+
+#i_faenza
 
 
 # geany for panel
@@ -279,6 +317,13 @@ i1="gimp"
 i2="${i1}"
 i_faenza
 
+# QtCreator
+K=Faenza
+d1="apps"
+d2="${d1}"
+i1="qtcreator"
+i2="QtProject-qtcreator"
+i_faenza
 
 # iPhone
 K=Mint-X
@@ -310,14 +355,17 @@ qmmp_faenza (){
  #d1=devices
  #i1=multimedia-player-ipod-blue #grey
  
- #d1=apps
- #i1=preferences-desktop-sound
+ d1=apps
+ i1=preferences-desktop-sound
  
- d1="emblems"
- i1=emblem-sound
+ #d1="emblems"
+ #i1=emblem-sound
  
  #d1=apps
  #i1=minitunes
+ 
+ #d1=apps
+ #i1=rhythmbox
  
  i_faenza
 }
@@ -326,7 +374,37 @@ qmmp_faenza (){
  qmmp_faenza
 
 
+#  pulse
+K="Faenza"
+d1=apps
+d2=apps
+i1=rhythmbox
+i2=multimedia-volume-control
+i_faenza
+
+
 ### ______________________________________________________
+
+
+# qt4config
+K="KFaenza"
+d1="apps"
+d2="${d1}"
+
+#i1="kmess"
+i1=gnome-subtitles
+
+i2="vacuum"
+i_faenza
+
+
+# qt4config
+K="KFaenza"
+d1="apps"
+d2="${d1}"
+i1="mame"
+i2="mame"
+i_faenza
 
 # qt4config
 K="KFaenza"
@@ -336,6 +414,13 @@ i1="qtlogo"
 i2="qt-logo"
 i_faenza
 
+# partitionmanager
+K="KFaenza"
+d1="apps"
+d2="${d1}"
+i1="gparted"
+i2="partitionmanager"
+i_faenza
 
 # FB2 / application/x-fictionbook+xml
 K="KFaenza"
@@ -383,15 +468,25 @@ i2="${i1}"
 i_faenza
 
 
+# preferences-system
+#K="KFaenza"
+#d1="places"
+#d2="categories"
+#i1="start-here-kde"
+#i2="preferences-system"
+#i_faenza
+
+
 ### ______________________________________________________
 
-# transmission-tray-icon"
+
+# transmission-tray-icon"    [*] transmission-tray-icon 			(transmission - matefaenza)
 K="matefaenza"
 d1="apps"
 d2="status"
 i1="transmission"
 i2="transmission-tray-icon"
-i_faenza
+#i_faenza
 
 # start-mate-menu
 K="matefaenza"
@@ -437,6 +532,9 @@ fi
 }
 
 
+
+
+
 K=mate
 d1="mimetypes"
 d2="${d1}"
@@ -444,12 +542,36 @@ i1="text-x-patch"
 i2="${i1}"
 i_x
 
+K=KFaenza
+d1=apps
+d2=mimetypes
+i1=preferences-plugin
+i2=text-x-patch
+#i_faenza
+
+
+
 K=mate
 d1="mimetypes"
 d2="${d1}"
 i1="application-x-perl"
 i2="${i1}"
 i_x
+
+
+# djvu
+i2="djvu"
+d2="mimetypes"
+
+#K=Mint-X
+#d1="apps"
+#i1="qpdfview"
+#i_faenza
+
+K=mate
+d1=mimetypes
+i1=x-office-document
+#i_x
 
 
 ### ______________________________________________________
