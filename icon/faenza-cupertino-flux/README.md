@@ -43,6 +43,7 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [+] blueman-device 					(preferences-system-bluetooth - Faenza)
     [+] mame 							(mame - KFaenza)
     [+] openoffice4 					(OOo - Faenza)
+    [+] AMZ 							(emblem-downloads -> downloads - Faenza)
     
     Modified:
     [*] system-file-manager 			(wireshark - KFaenza)
@@ -60,7 +61,7 @@ All themes install or copy in /usr/share/icons or ~/.icons
     [*] winecfg 						(wine - Faenza)
     [*] gdmsetup 						(gdm-setup - Faenza)
     [*] start-here 						(start-here-mate - matefaenza)
-    [+] QtProject-qtcreator 			(qtcreator - Faenza)
+    [*] QtProject-qtcreator 			(qtcreator - Faenza)
     
 
 ## Used, Icons copy from this themes: 

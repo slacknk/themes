@@ -257,6 +257,14 @@ i2="kget"
 #i_faenza
 
 
+K="Faenza"
+d1="emblems"
+d2="apps"
+i1="emblem-downloads"
+i2="download"
+i_faenza
+
+
 # clipit
 K="Faenza-Dark"
 d1="status"
