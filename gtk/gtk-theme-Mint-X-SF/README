@@ -2,7 +2,7 @@ Description:
 Some Fixes for Mint-X-gtk2-theme (by me). This is themes based on Mint-X from LinuxMint Releases.
 Included gtk3 w/o diff. Only edited gtk2-theme.
 
-Based on:
+Start (Based) on:
 - mint-themes_1.2.8
 - mint-themes_1.3.5
 - mint-themes-gtk3_3.8-9
@@ -35,7 +35,10 @@ Changelog:
 [*] window-dragging
 
 17QF2-16GTK3
-[+] This theme using for gtk2 - 17QF and gtk3 from linuxmint-16 , if you gtk3 is not how ubuntu
+[+] This theme using for gtk2 - 17QF and gtk3 from linuxmint-16
 
 17QF2-18GTK3
 [+] gtk3 from linuxmint-18 and gtk2 - 17QF
+
+17QF2-GTK3.X.y
+[+] gtk3 from [mint-themes-gtk3](http://packages.linuxmint.com/pool/main/m/mint-themes-gtk3/)
