@@ -274,6 +274,15 @@ i2="clipit-trayicon"
 #i_faenza
 
 
+# clipman-xfce4 - don't work-maybe
+K="Faenza-Dark"
+d1="status"
+d2="status"
+i1="gtg-panel"
+i2="xfce4-clipman-plugin"
+#i_faenza
+
+
 #[+] eom 							(eom - matefaenza)
 # eom
 K="matefaenza"
@@ -631,7 +640,7 @@ i_faenza
 
 
 echo -e "\n______________________________________________________"
-echo -e "Done, Enjoy new icon-theme: \e[1m$NAME-Dark\e[0m "
+echo -e "Done; Enjoy new icon-theme: \e[1m$NAME-Dark\e[0m "
 
 
 

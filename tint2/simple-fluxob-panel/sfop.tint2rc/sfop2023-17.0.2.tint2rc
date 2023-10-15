@@ -1,0 +1,494 @@
+# Tint2 config file
+
+# Notes! 0.11 http://code.google.com/p/tint2/wiki/Configure
+# 17.0.2 https://gitlab.com/o9000/tint2/wikis/Configure
+
+# tint2-executors https://github.com/I-LeCorbeau/tint2-executors
+# #298fcc Redmond-X theme for Tint2 by HAZUKI https://www.gnome-look.org/p/1271099
+# #bd93f9 Dracula - Dark theme for tint2 https://draculatheme.com/tint2
+# #2eb398 Matcha Gtk Theme https://vinceliuice.github.io/theme-matcha.html
+
+
+### START HERE
+#
+#
+# ID-0 // Identifier 0 refers to a special background which is fully transparent, 
+# identifier 1 applies the first background defined in the config file etc.
+#
+#
+###
+
+###
+#
+# ID-1 - Task-active
+rounded = 0
+background_content_tint_weight = 0
+border_content_tint_weight = 0
+
+background_color         = #3A3A3A 100
+background_color_hover   = #3A3A3A 100
+background_color_pressed = #3A3A3A 100
+
+border_width         = 0
+border_sides         = LRTB
+border_color         = #ff0000 80
+border_color_hover   = #bd93f9 100
+border_color_pressed = #4042BF 100
+
+###
+#
+# ID-2 - ALL // Default w/o border_ _hover _pressed
+rounded = 0
+background_content_tint_weight = 0
+border_content_tint_weight = 0
+
+background_color         = #151515 100
+background_color_hover   = #151515 100
+background_color_pressed = #151515 100
+
+border_width         = 0
+border_sides         = B
+border_color         = #151515 100
+border_color_hover   = #298fcc 100
+border_color_pressed = #298fcc 100
+
+###
+#
+# ID-3 - Clock and executor plugin _hover w/ _pressed
+rounded = 0
+background_content_tint_weight = 0
+border_content_tint_weight = 0
+
+background_color         = #151515 100
+background_color_hover   = #151515 100
+background_color_pressed = #151515 100
+
+border_width         = 1
+border_sides         = B
+border_color         = #151515 100
+border_color_hover   = #bd93f9 50
+border_color_pressed = #bd93f9 20
+
+###
+#
+# ID-4 - Test... Ugly Test
+rounded = 0
+border_width = 5
+border_sides = LRTB
+
+background_color = #151515 100
+border_color     = #ff0000 80
+
+background_color_hover = #BFBF40 100
+border_color_hover     = #bd93f9 100
+
+background_color_pressed = #BF409D 100
+border_color_pressed     = #4042BF 100
+
+background_content_tint_weight = 0
+border_content_tint_weight     = 0
+
+
+###
+#
+# ID-5 - Test... Ugly Test-gradient
+
+# Gradient 1: thin film effect
+gradient = horizontal
+start_color = #111122 30
+end_color = #112211 30
+color_stop = 60 #221111 30
+
+# Gradient 2: radial glow
+gradient = radial
+start_color = #ffffff 20
+end_color = #ffffff 0
+
+# Gradient 3: elegant black
+gradient = vertical
+start_color = #444444 100
+end_color = #222222 100
+
+# Gradient 4: elegant black
+gradient = horizontal
+start_color = #111111 100
+end_color = #222222 100
+
+# Background 1: Active desktop name
+color_stop = percentage #rrggbb opacity
+rounded = 2
+border_width = 1
+border_sides = TBLR
+
+background_color = #555555 10
+border_color = #ffffff 60
+
+background_color_hover = #555555 10
+border_color_hover = #ffffff 60
+
+background_color_pressed = #555555 10
+border_color_pressed = #ffffff 60
+
+gradient_id = 3
+gradient_id_hover = 4
+gradient_id_pressed = 2
+
+
+
+
+#####
+###
+#
+# taskbar_background_id = 2
+# task_background_id = 3
+# systray_background_id = 1
+# clock_background_id = 1
+# taskbar_name_background_id = 0
+# taskbar_name_active_background_id = 0
+#
+###
+##### =>
+
+#
+panel_background_id          = 0
+taskbar_background_id        = 0
+taskbar_active_background_id = 2
+#
+task_active_background_id      = 1
+task_background_id             = 2
+##task_urgent_background_id    = 2
+##task_iconified_background_id = 2
+#
+systray_background_id          = 2
+clock_background_id            = 3
+
+
+#
+# FONTS >_< _slack15.0
+#
+# liberation-fonts-ttf-2.1.5-noarch-1
+# dejavu-fonts-ttf-2.37-noarch-6
+# noto-fonts-ttf-20171024-noarch-4
+# 
+# google-droid-fonts-20141010-noarch-1_slack15.0_SBo
+# ttf-roboto-2.138-noarch-1_slack15.0_SBo
+#
+
+#
+##task_font = Liberation Sans Regular 11
+##task_font = Noto Sans Medium 9
+##task_font = Noto Sans Display Medium 10
+##task_font = Roboto Medium 10
+##task_font = Roboto Black 10
+##task_font = Roboto Condesed Medium 10
+##task_font = Roboto Bold 10
+#
+task_font = Liberation Sans Regular 10
+
+#
+##time1_font = DejaVu Sans 14
+##time1_font = Droid Sans Fallback Bold 12
+#
+time1_font = DejaVu Sans 14
+
+
+taskbar_name_font = Monospace Bold 11
+taskbar_name_active_font_color = #D7D0C7 75
+task_font_color                = #D7D0C7 50
+#
+##task_urgent_font_color       = #D7D0C7 40
+##task_iconified_font_color    = #D7D0C7 40
+#
+task_active_font_color         = #ADADAD 100
+clock_font_color               = #B6B8C1 80
+
+
+#
+# PANEL
+#
+panel_monitor  = primary
+panel_position = bottom center horizontal
+panel_size     = 100% 17
+scale_relative_to_dpi = 
+scale_relative_to_screen_height = 
+panel_shrink   = 0
+panel_margin   = 0 0
+panel_padding  = 0 0 0
+font_shadow    = 0
+wm_menu        = 1
+panel_dock         = 0
+panel_pivot_struts = 0
+panel_layer        = normal
+strut_policy       = follow_size
+panel_window_name  = tint2_17.0.2
+disable_transparency = 0
+
+mouse_effects          = 1
+mouse_hover_icon_asb   = 100   0   0
+mouse_pressed_icon_asb = 100   0   0
+
+autohide              = 0
+autohide_show_timeout = 0.3
+autohide_hide_timeout = 2.2
+autohide_height       = 2
+
+
+##### Taskbar / Pager
+#
+taskbar_mode = single_desktop
+taskbar_hide_if_empty = 1
+taskbar_distribute_size = 1
+taskbar_padding = 0 0 0
+#taskbar_background_id = 
+#taskbar_active_background_id = 1
+taskbar_hide_inactive_tasks    = 0
+taskbar_hide_different_desktop = 0
+taskbar_hide_different_monitor = 0
+taskbar_always_show_all_desktop_tasks = 1
+taskbar_sort_order = none
+taskbar_name = 1
+taskbar_name_padding = 4
+#taskbar_name_background_id = 
+#taskbar_name_font_color = 
+#taskbar_name_active_background_id = 
+#taskbar_name_active_font_color = #ffffff 50
+
+#
+# Taskbar buttons
+#
+
+task_icon      = 1
+task_text      = 1
+task_centered  = 0
+task_tooltip   = 0 
+task_thumbnail = 0
+task_thumbnail_size = 1024
+task_maximum_size = 0 40
+task_padding      = -1 -2 +1
+urgent_nb_of_blink = 8
+#task_font =
+#task_background_id =
+
+task_icon_asb = 80 0 -10
+task_active_icon_asb = 80 0 -10
+
+#task_font_color = #D7D0C7 50
+#task_active_font_color = #ADADAD 100
+
+#
+# Mouse actions for taskbar buttons
+#
+
+mouse_middle = close
+mouse_right = maximize_restore
+mouse_scroll_up = none
+mouse_scroll_down = none
+
+
+##### E - Executor
+#
+# execp_command = [ $( xset -q |grep 'Caps Lock' |awk '{ print $4 }' ) = on ] &&LED='application-x-cda.svg' ||LED='application-x-cd-image.svg'; echo /usr/share/icons/breeze/mimetypes/22/${LED};df -h | awk '/\/$/ { print $4}'
+#
+execp = new
+execp_name = text
+execp_command = df -h | awk '/\/$/ { print $4}'
+execp_interval = 1800
+execp_continuous = 0
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_icon_w = 0
+execp_icon_h = 0
+execp_font = Sans Bold 12
+execp_font_color = #B6B8C1 80
+execp_markup = 0
+execp_background_id = 3
+execp_centered = 0
+execp_padding = 3 -30 0
+execp_monitor = primary
+execp_lclick_command = 
+execp_mclick_command =
+execp_rclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+
+#execp_tooltip = I will tell you a secret...
+ execp_tooltip =
+
+
+##### : - Separator
+#
+separator = new
+separator_background_id = 3
+separator_color = #bd93f9 80
+separator_style = dots
+separator_size = 6
+separator_padding = 4 1
+
+##### S - Systray
+#
+systray_padding = 0 -3 -1
+#systray_background_id = 
+systray_sort = left2right
+systray_icon_size = 24
+systray_icon_asb = 70 0 0
+systray_monitor = primary
+systray_name_filter =
+
+##### C - Clock
+#
+#time2_format = %H:%M
+#time2_timezone = 
+#time2_font = 
+time1_format = %e %b %a %H:%M
+time1_timezone = 
+#time1_font = 
+#clock_font_color = #B6B8C1 80
+clock_padding = 2 5
+clock_tooltip = 
+clock_tooltip_timezone = :UTC
+clock_lclick_command = xdotool key super+d
+clock_rclick_command = gsimplecal
+clock_mclick_command = 
+clock_uwheel_command = 
+clock_dwheel_command = 
+
+
+
+# panel_items = LTSBC 
+# defines the items tint2 will show and the order of those items. 
+# Each letter refers to an item, defined as:
+# L shows the Launcher
+# T shows the Taskbar
+# S shows the Systray (also called notification area)
+# B shows the Battery status
+# C shows the Clock
+# F adds an extensible spacer (freespace). You can specify more than one. Has no effect if T is also present. (since 0.12)
+# E adds an executor plugin. You can specify more than one. (since 0.12.4)
+# P adds a push button. You can specify more than one. (since 0.14)
+# : adds a separator. You can specify more than one. (since 0.13.0)
+#
+panel_items = TE:::SC
+
+
+
+#------------------------------------------
+#------------------------------------------ 
+#
+# C-O-M-M-E-N-T-S here 
+# 
+#------------------------------------------ 
+#------------------------------------------ 
+# Executor // since 0.12.4
+# E adds an executor plugin
+#------------------------------------------
+# execp_has_icon = 1
+# execp_command = echo /usr/share/icons/elementary-xfce/emblems/24/emblem-colors-blue.png;
+#
+# execp_markup = 1
+# execp_command = echo '<span foreground="#7f7">Green</span>'
+# execp_command = echo '<span foreground="#77f">Blue</span>' 
+# execp_command = echo '<span foreground="#f77">Red</span>'
+#------------------------------------------ 
+#------------------------------------------ 
+# Separator // since 0.13.0
+# : adds a separator [empty | line | dots]
+#------------------------------------------
+##### : - Separator < | >
+#
+#separator = new
+#separator_background_id = 2
+#separator_color = #bd93f9 80
+#separator_style = line
+#separator_size = 12
+#separator_padding = 2 2
+#
+##### : - Separator <  >
+#
+#separator = new
+#separator_background_id = 2
+#separator_color = #bd93f9 80
+#separator_style = empty
+#separator_size = 12
+#separator_padding = 2 2
+#
+##### : - Separator < : > 
+#
+#separator = new
+#separator_background_id = 2
+#separator_color = #bd93f9 80
+#separator_style = dots
+#separator_size = 12
+#separator_padding = 2 2
+#------------------------------------------
+#------------------------------------------ 
+# Tooltips
+#------------------------------------------ 
+#tooltip_padding = 2 2
+#tooltip_show_timeout = 0.7
+#tooltip_hide_timeout = 0.3
+#tooltip_background_id = 6
+#tooltip_font_color = #000000 100
+#tooltip_font = sans bold 10
+#------------------------------------------ 
+# B shows the Battery status
+# Battery - Default: %p. (since 1.0) Format specification:
+#------------------------------------------ 
+# %s: State (charging, discharging, full, unknown).
+# %m: Minutes left until completely charged/discharged (estimated).
+# %h: Hours left until completely charged/discharged (estimated).
+# %t: Time left. Shows "hrs:mins" when charging/discharging, or "Ful" when full.
+# %p: Percentage. Includes the % sign.
+# %P: Percentage. Without the % sign.
+#------------------------------------------  
+#battery_hide = never
+#battery_low_status = 10
+#battery_low_cmd = xmessage 'tint2: Battery low!'
+#battery_full_cmd = notify-send "battery full"
+#bat1_font =
+#bat2_font =
+#battery_font_color = #bd93f9 100
+#bat1_format = %s %h:%m
+#bat2_format = %t %p %P
+#battery_padding = 20 50
+#battery_background_id = 1
+#battery_tooltip_enabled = 1
+#battery_lclick_command =
+#battery_rclick_command = 
+#battery_mclick_command = 
+#battery_uwheel_command = 
+#battery_dwheel_command = 
+#ac_connected_cmd = 
+#ac_disconnected_cmd =
+#------------------------------------------
+#------------------------------------------ 
+# BUTTON // since 0.14
+# P adds a push button. You can specify more than one.
+#------------------------------------------  
+#button = new
+#button_icon = Noobslab-Flat_Remix--space-invaders
+#button_background_id = 0
+#button_padding = 0 -7 -10
+#button_max_icon_size = 512
+#button_lclick_command = jgmenu_run
+#------------------------------------------
+#------------------------------------------ 
+# LAUNCHER // since 0.12
+# L shows the Launcher
+#------------------------------------------  
+#launcher_item_app = codeblocks.desktop
+#launcher_item_app = thunar.desktop
+#launcher_item_app = htop.desktop
+#launcher_item_app = xterm.desktop
+#launcher_apps_dir = $XDG_DATA_HOME/applications
+#launcher_background_id =
+#launcher_icon_background_id = 
+#launcher_padding = 0 0 0
+#launcher_icon_size = 128
+#launcher_icon_theme = elementary-xfce-dark
+#launcher_icon_theme_override = 0
+#launcher_icon_asb = 100 0 0
+#launcher_tooltip = 1
+#startup_notifications = 1
+#------------------------------------------ 
+#------------------------------------------ 
+# End of config
